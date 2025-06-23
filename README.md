@@ -2,8 +2,6 @@
 
 This project compares two deep learning models — **AlexNet** and a custom **MobileNet-like architecture** — built from scratch to classify images in the CIFAR-10 dataset using Convolutional Neural Networks (CNNs).
 
----
-
 ## 📌 Table of Contents
 
 - [📖 About the Project](#-about-the-project)
@@ -19,8 +17,6 @@ This project compares two deep learning models — **AlexNet** and a custom **Mo
 - [🚀 How to Run](#-how-to-run)
 - [📝 License](#-license)
 
----
-
 ## 📖 About the Project
 
 This project aims to implement and compare **two CNN models** on the CIFAR-10 dataset:
@@ -32,8 +28,6 @@ We evaluate both models on:
 - Precision, Recall, F1-Score
 - Inference Time
 
----
-
 ## 📊 Dataset
 
 **CIFAR-10** is a labeled subset of the 80 million tiny images dataset.  
@@ -41,14 +35,10 @@ We evaluate both models on:
 - 50,000 images for training, 10,000 for testing.
 - Classes: `airplane`, `automobile`, `bird`, `cat`, `deer`, `dog`, `frog`, `horse`, `ship`, `truck`.
 
----
-
 ## 🔍 What is a CNN?
 
 A **Convolutional Neural Network (CNN)** is a deep learning model especially effective for image-related tasks.  
 It consists of layers that automatically detect patterns such as edges, textures, and object parts from pixel data.
-
----
 
 ## 🏗️ Architectures Used
 
@@ -61,15 +51,11 @@ It consists of layers that automatically detect patterns such as edges, textures
   - Dropout for regularization
 Input → Conv2D → MaxPool → Conv2D → MaxPool → Conv2D → Conv2D → MaxPool → FC → Dropout → FC → Dropout → Output
 
----
-
 ### 🟩 MobileNet-like
 - Inspired by **MobileNet v1**, optimized for speed.
 - Uses **Depthwise Separable Convolutions** for fewer parameters and faster inference.
 - Ends with **GlobalAveragePooling** before classification.
 Input → Conv2D → [Depthwise + Pointwise] → MaxPool → [Depthwise + Pointwise] → GAP → Output
-
----
 
 ## ⚙️ Training Details
 
@@ -78,8 +64,6 @@ Input → Conv2D → [Depthwise + Pointwise] → MaxPool → [Depthwise + Pointw
 - **Loss Function**: Categorical Crossentropy  
 - **Batch Size**: 128  
 - **Early Stopping**: Yes (patience=5)
-
----
 
 ## 🚀 How to Run
 
